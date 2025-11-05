@@ -19,6 +19,18 @@ app.get('/usuarios',(req,res) => {
   ]);
 });
 
+// Rota 4- Produtos- crie um json com 5 produtos ---> copiar visualmente o exemplo anterior 
+app.get('/produtos', (req,res) => {
+  res.json([
+    {id:1, produto:"Onix"},
+    {id:2 , produto: "Civic"},
+    {id:3 , produto: "Corolla"},
+    {id:4 , produto: "Vectra "},
+    {id:5 , produto: "Opala"},
+    {id:2 , produto: "omega"}
+  ]);
+});
+
 // Inicia o servidor 
 app.listen(3000,() =>{
   console.log('Servidor rodando em http://localhost:3000');
